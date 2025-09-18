@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="利用hexo和github建立Blog" />
+    <meta name="hexo-theme-A4" content="v2.0.0" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.png">
+    <title>Hexo</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+         <!--注意：首页既不是post也不是page-->
+        
+        
+        
+<link rel="stylesheet" href="/css/ui.css">
+ 
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+    
+   
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+   
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+    <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css' /> 
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+    
+    
+        <style>
+            .index-main{
+                max-width:  880px;
+            }
+        </style>
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    <style>
+        :root {
+            --waline-theme-color: #374151; 
+            --waline-color: #374151; 
+            --waline-border-color: #374151; 
+            --waline-white: #374151; 
+            --waline-bgcolor-light: #ffffff;  
+        }
+        body {
+            color: #374151;
+            background: #faf7f5;
+        }
+        .post-md code {
+            background: #f8f9fa;
+            color: #5a67d8; 
+        }
+        .post-md pre, .post-md .highlight {
+            background: #f8f9fa;
+            color: #5a67d8; 
+        }
+        pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+            color: #374151;
+        }
+        pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+            color: #374151;
+        }
+        .year-font-color {
+            color: #374151 !important;
+        }
+        .wl-card span.wl-nick {
+            color: #374151; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #374151;
+            color: #374151; 
+        }
+        .wl-btn {
+            border: 1px solid #374151; 
+            color:  #374151;  
+        }
+        .wl-btn.primary {
+            color: #ffffff; 
+        }
+        .wl-header label {
+            color: #374151;
+        }
+        a {
+            color: #4c6ef5;
+        }
+
+        .post-md a {
+            color: #4c6ef5;
+        }
+
+        .nav li a {
+            color: #4c6ef5;
+        }
+
+        .archive-main a:link {
+            color: #4c6ef5;
+        }
+        .archive-main a:visited {
+            color: #3b5bdb; 
+        }
+
+        .archive li span {
+            color: #374151;
+        }
+
+        .post-main-title {
+            color: #374151;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #374151;
+        }
+
+        [data-waline] p {
+            color: #374151;
+        }
+        [data-waline] a {
+            color: #374151;
+        } 
+        .wl-sort li.active {
+            color: #374151;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #ffffff;
+        }
+
+        .paper {
+            background: #faf7f5;
+        }
+
+        .index-main {
+            background: #ffffff;
+        }
+
+        .paper-main {
+            background: #ffffff;
+        }
+
+        .wl-panel {
+            background: #ffffff;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #ffffff;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #ffffff;
+        }
+
+        .post-md table tr:nth-child(odd) td {
+            background: #ffffff;
+        }
+
+        .post-md table tr:nth-child(even) td {
+            background: #ffffff;
+        }
+
+    
+        .progress-wrap::after {
+            color: #374151; /* 箭头的颜色 */
+        }
+        .progress-wrap svg.progress-circle path {
+	        stroke: #374151; /* 边框的颜色 */
+        }
+        .progress-wrap::before {
+	        background-image: linear-gradient(298deg, #4c6ef5, #4c6ef5); /* 鼠标滑过的箭头颜色 */
+         }
+
+        .return-to-last-progress-wrap::after {
+            color: #374151; /* 箭头的颜色 */
+        }
+        .return-to-last-progress-wrap svg.progress-circle path {
+	        stroke: #374151; /* 边框的颜色 */
+        }
+        .return-to-last-progress-wrap::before {
+	        background-image: linear-gradient(298deg, #4c6ef5, #4c6ef5); /* 鼠标滑过的箭头颜色 */
+         }
+
+         .left-toc-container::-webkit-scrollbar-thumb {
+            background-color: #374151; /* 设置滚动条拖动块的颜色 */
+        }
+
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: #4c6ef5;
+            border-left-color: #4c6ef5;
+        }
+        .bs-docs-sidebar .nav>li>a {
+            color:  #374151;
+        }
+    </style>
+
+    
+
+
+    <body>
+        <script src="/js/darkmode-js.min.js"></script>
+        
+        <script>
+            const options = {
+                bottom: '40px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '42px', // default: 'unset'
+                time: '0.3s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: ' #faf7f5  ',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/favicon.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">Hexo</a> 
+            <span class="description"></span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+            
+                <li><a href="/about/">关于</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    利用hexo和github建立Blog
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2025-09-10</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：739</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：3分钟</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span id="busuanzi_container_page_pv">
+                        阅读量：<span id="busuanzi_value_page_pv"></span>次
+                    </span>
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="post-toc-text">准备工作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#node-js%E9%85%8D%E7%BD%AE"><span class="post-toc-text">node.js配置</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#git%E5%AE%89%E8%A3%85"><span class="post-toc-text">git安装</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%90%AD%E5%BB%BAgithub%E5%BA%93"><span class="post-toc-text">搭建github库</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2"><span class="post-toc-text">生成本地博客</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98"><span class="post-toc-text">设置博客主题</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>安装程序：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://node.js.org/">node.js</a></li>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/">git</a></li>
+</ol>
+<h5 id="node-js配置"><a href="#node-js配置" class="headerlink" title="node.js配置"></a>node.js配置</h5><ol>
+<li>在node.js路径中新建文件夹：node_cache、node_global。<br><a href="/../res/nodejs%E7%9B%AE%E5%BD%95.png" title="nodejs目录" class="gallery-item" style="box-shadow: none;"> <img src="/../res/nodejs%E7%9B%AE%E5%BD%95.png" alt="nodejs目录"></a></li>
+<li>进入<strong>编辑系统环境变量</strong>，在环境变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container>系统变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container>Path中新建变量：<br><code>D:\AppData\nodejs\</code><br><code>D:\AppData\nodejs\node_cache</code><br><code>D:\AppData\nodejs\node_global</code><br>注：<code>D:\AppData\nodejs\</code>为node.js的安装路径，应视实际情况而定。<br><a href="/../res/nodejs%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" title="nodejs环境变量" class="gallery-item" style="box-shadow: none;"> <img src="/../res/nodejs%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt="nodejs环境变量"></a><br>修改环境变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container>用户变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container>Path中的<code>C:\Users\Ataimaitai\AppData\Roaming\npm</code>为<code>D:\AppData\nodejs\node_global</code><br><a href="/../res/nodejs%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1.png" title="nodejs用户变量1" class="gallery-item" style="box-shadow: none;"> <img src="/../res/nodejs%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1.png" alt="nodejs用户变量1"></a><br><a href="/../res/nodejs%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F2.png" title="nodejs用户变量2" class="gallery-item" style="box-shadow: none;"> <img src="/../res/nodejs%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F2.png" alt="nodejs用户变量2"></a>  </li>
+<li>测试node.js安装是否成功<br>win+r进入cmd运行下面指令并得到相应输出：<br><a href="/../res/nodejscmd.png" title="nodejscmd" class="gallery-item" style="box-shadow: none;"> <img src="/../res/nodejscmd.png" alt="nodejscmd"></a>  </li>
+<li>在cmd目录窗口输入下面命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix "D:\AppData\nodejs\node_global"</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set cache "D:\AppData\nodejs\node_cache"</span><br></pre></td></tr></table></figure>
+<p><a href="/../res/prefix_cache.png" title="prefix_cache" class="gallery-item" style="box-shadow: none;"> <img src="/../res/prefix_cache.png" alt="prefix_cache"></a><br>5. 安装淘宝镜像</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com/</span><br></pre></td></tr></table></figure>
+<p>注：查看安装源<code>npm config get registry</code><br><a href="/../res/%E6%B7%98%E5%AE%9D%E6%BA%90.png" title="淘宝源" class="gallery-item" style="box-shadow: none;"> <img src="/../res/%E6%B7%98%E5%AE%9D%E6%BA%90.png" alt="淘宝源"></a><br>6. 安装<code>cnpm</code><br><code>npm install -g cnpm</code><br>说明： npm是node官方的包管理器。cnpm是中国版的npm，是淘宝定制的 npm 命令行工具，用于代替默认的 npm。<br><a href="/../res/install_cnpm.png" title="install_cnpm" class="gallery-item" style="box-shadow: none;"> <img src="/../res/install_cnpm.png" alt="install_cnpm"></a>  </p>
+<h5 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h5><p>安装时只需要一直next即可。</p>
+<h4 id="搭建github库"><a href="#搭建github库" class="headerlink" title="搭建github库"></a>搭建github库</h4><ol>
+<li>注册github账户。</li>
+<li>新建仓库<br>仓库名称必须为：用户名.github.io。并且要开启Add README。<br><a href="/../res/github.png" title="github" class="gallery-item" style="box-shadow: none;"> <img src="/../res/github.png" alt="github"></a>  </li>
+<li>生成SSH Keys<br>进入git命令行，输入：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C"github绑定的邮箱"</span><br></pre></td></tr></table></figure>
+
+<p>一直按enter，直到命令完成。<br>根据命令行中的提示，找到.ssh文件夹。复制id_rsa.pub文件中的全部内容。<br>在github设置中找到SSH and GPG keys，新建一个SSH Keys，并粘贴id_rsa.pub文件中的内容（title随意）<br><a href="/../res/githubsetting.png" title="githubsetting" class="gallery-item" style="box-shadow: none;"> <img src="/../res/githubsetting.png" alt="githubsetting"></a><br><a href="/../res/githubssh.png" title="githubssh" class="gallery-item" style="box-shadow: none;"> <img src="/../res/githubssh.png" alt="githubssh"></a><br>4. 检查ssh是否绑定成功<br>在git命令行输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>当看到提示时，一定要输入<code>yes</code><br>最后会输出：Hi 用户名! …</p>
+<h4 id="生成本地博客"><a href="#生成本地博客" class="headerlink" title="生成本地博客"></a>生成本地博客</h4><p>新建一个文件夹用于放置博客所生成的文件。<br>在这个文件夹中，进入cmd<br>检查是否安装了hexo：<code>hexo -v</code>，若没有安装，则运行<code>npm install -g hexo</code>安装hexo<br>安装成功后，运行<code>hexo init</code>，此时这个文件夹中会出现博客的配置文件。若失败可以多尝试几次，或者以管理员运行cmd，在运行<code>hexo init</code><br><a href="/../res/blogpath.png" title="blogpath" class="gallery-item" style="box-shadow: none;"> <img src="/../res/blogpath.png" alt="blogpath"></a><br>此时blog的配置文件全部完成，运行<code>hexo server</code> 或 <code>hexo s</code>，根据命令行提示在浏览器输入地址，即可成功运行本地blog。<br><a href="/../res/localblog.png" title="localblog" class="gallery-item" style="box-shadow: none;"> <img src="/../res/localblog.png" alt="localblog"></a> </p>
+<h4 id="设置博客主题"><a href="#设置博客主题" class="headerlink" title="设置博客主题"></a>设置博客主题</h4><p>例如有主题：<code>git@github.com:Yue-plus/hexo-theme-arknights.git</code><br>github地址：<a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights?tab=readme-ov-file#">https://github.com/Yue-plus/hexo-theme-arknights?tab=readme-ov-file#</a>  </p>
+<p>进入博客文件夹目录，打开cmd，运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:Yue-plus/hexo-theme-arknights.git themes/arknights</span><br></pre></td></tr></table></figure>
+
+<p>注：指令末尾的themes指明主题应放置的文件夹，固定不变。<br>注：arknights为主题的名称，可自己设置。<br>完成后，打开博客文件夹中的_config.yml，修改<code>themes: landscape</code>为<code>themes: arknights</code><br><a href="/../res/theme.png" title="theme" class="gallery-item" style="box-shadow: none;"> <img src="/../res/theme.png" alt="theme"></a><br>根据主题的github库中的说明，安装依赖：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-server hexo-browsersync hexo-renderer-pug --save</span><br></pre></td></tr></table></figure>
+<p>注：github库中还有一些配置要求，都需要进行调整。<br>……<br>……<br>……<br>随后运行<code>hexo clean</code>和<code>hexo generate</code>更新博客缓存，再运行<code>hexo server</code>即可查看blog </p>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2025-09-10</span>
+            
+                <span>该篇文章被 John Doe</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/%E5%89%8D%E7%AB%AF/'>
+                            前端
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E5%AD%A6%E4%B9%A0/'>
+                            学习
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/2024/07/02/hello-world/">hello world</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 1949-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊看过大海的人不会忘记海的广阔🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: true, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1); // 修复选择器
+    }
+    
+</script>
+
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>
