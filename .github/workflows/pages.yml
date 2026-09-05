@@ -29,11 +29,20 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: |
-          # 先安装缺失的依赖包
+          # 先卸载不兼容的版本
+          npm uninstall hexo semver || true
+          # 安装真正缺失的依赖包（按错误提示）
+          npm install --save hexo@^7.1.1 \
+            hexo-component-inferno@^3.1.2 \
+            hexo-renderer-inferno@^1.0.2 \
+            inferno@^8.2.3 \
+            inferno-create-element@^8.2.3 \
+            semver@^7.5.4
+          # 顺便安装你之前提到的包（如果项目需要）
           npm install babel-plugin-inferno@6.7.1 --save-exact
           npm install @babel/preset-env@^7.29.7 --save
           npm install bulma-stylus@^0.8.0 --save
-          # 再安装所有依赖
+          # 安装所有剩余依赖
           npm install
       - name: Build
         run: npm run build
