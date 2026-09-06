@@ -3,7 +3,7 @@ version: 5.1.0
 # Icarus 主题风格，可选 "default"（默认）或 "cyberpunk"（赛博朋克）
 variant: default
 # 网站 Logo 的路径或 URL
-logo: /img/logo.svg
+logo: /img/bluearchive-logo.png
 # 页面元数据配置
 head:
     # 网站图标的 URL 或路径
