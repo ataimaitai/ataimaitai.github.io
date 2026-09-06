@@ -248,7 +248,7 @@ widgets:
                 icon: fab fa-github
                 url: https://github.com/ataimaitai
             Facebook:
-                icon: fab fa-fackbook
+                icon: fab fa-facebook
                 url: https://facebook.com
             Twitter:
                 icon: fab fa-twitter
