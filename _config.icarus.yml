@@ -12,7 +12,7 @@ head:
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Web 应用名称（默认使用站点标题）
-        name: 
+        name: ataimaitai's blog
         # Web 应用显示名称
         # 当空间不足以显示完整名称时使用
         short_name: 
