@@ -1,5 +1,12 @@
 ---
+abbrlink: ''
+categories:
+- - hexo部署blog教程
+date: ''
+tags:
+- hexo
 title: Hello World
+updated: '2026-09-06T18:04:47.214+08:00'
 ---
 欢迎使用 [Hexo](https://hexo.io/)！这是你的第一篇文章。你可以查看 [官方文档](https://hexo.io/docs/) 获取更多信息。如果你在使用 Hexo 的过程中遇到问题，可以在 [故障排除](https://hexo.io/docs/troubleshooting.html) 页面查找答案，也可以在 [GitHub](https://github.com/hexojs/hexo/issues) 上提出问题。
 
