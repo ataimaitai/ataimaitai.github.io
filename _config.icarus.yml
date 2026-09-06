@@ -12,10 +12,10 @@ head:
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Web 应用名称（默认使用站点标题）
-        name: ataimaitai's blog
+        name: 
         # Web 应用显示名称
         # 当空间不足以显示完整名称时使用
-        short_name: blog
+        short_name: 
         # Web 应用的启动 URL
         start_url: 
         # 应用的默认主题颜色
@@ -39,7 +39,7 @@ head:
     open_graph:
         # 页面标题（og:title，可选）
         # 大多数情况下建议留空
-        title: ataimaitai's blog
+        title: 
         # 页面类型（og:type，可选）
         # 大多数情况下建议留空
         type: blog
@@ -51,7 +51,7 @@ head:
         image: 
         # 站点名称（og:site_name，可选）
         # 大多数情况下建议留空
-        site_name: ataimaitai's blog
+        site_name: 
         # 页面作者（article:author，可选）
         # 大多数情况下建议留空
         author: 
