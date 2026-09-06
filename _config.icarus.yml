@@ -15,7 +15,7 @@ head:
         name: ataimaitai's blog
         # Web 应用显示名称
         # 当空间不足以显示完整名称时使用
-        short_name: 
+        short_name: blog
         # Web 应用的启动 URL
         start_url: 
         # 应用的默认主题颜色
@@ -39,7 +39,7 @@ head:
     open_graph:
         # 页面标题（og:title，可选）
         # 大多数情况下建议留空
-        title: 
+        title: ataimaitai's blog
         # 页面类型（og:type，可选）
         # 大多数情况下建议留空
         type: blog
@@ -51,7 +51,7 @@ head:
         image: 
         # 站点名称（og:site_name，可选）
         # 大多数情况下建议留空
-        site_name: 
+        site_name: ataimaitai's blog
         # 页面作者（article:author，可选）
         # 大多数情况下建议留空
         author: 
