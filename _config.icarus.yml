@@ -7,7 +7,7 @@ logo: /img/logo.svg
 # 页面元数据配置
 head:
     # 网站图标的 URL 或路径
-    favicon: /img/favicon.svg
+    favicon: /img/blog.svg
     # Web 应用清单（Manifest）配置
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
