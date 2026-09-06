@@ -248,8 +248,8 @@ widgets:
                 icon: fab fa-github
                 url: https://github.com/ataimaitai
             Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
+                icon: fab fa-envelope
+                url: 'mailto:chenxuejinxxx@163.com'
             Twitter:
                 icon: fab fa-twitter
                 url: https://twitter.com
